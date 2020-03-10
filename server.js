@@ -10,10 +10,8 @@ const PORT = process.env.PORT || 8080;
 
 const routes = require('./routes/api');
 
-// MONGO
-const MONGODB_URI_ATLAS = 'mongodb+srv://liangbryan2:Merrychristmas@mernapp-kkhds.mongodb.net/test?retryWrites=true&w=majority';
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mernApp', {
+mongoose.connect(process.env.MONGODB_URI_ATLAS || 'mongodb://localhost/mernApp', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
